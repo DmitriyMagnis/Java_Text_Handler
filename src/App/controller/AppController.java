@@ -19,10 +19,12 @@ public class AppController {
         view.closeScanner();
 
         String filePath = Constants.BASE_PATH + fileName + ".txt";
+        String pureFilePath = Constants.BASE_PATH + fileName + "2" + ".txt";
 
         view.writeOutput(model.createDir(Constants.BASE_PATH));
         view.writeOutput(model.createFile(filePath));
         view.writeOutput(model.writeToFile(fileContent, filePath));
+        view.writeOutput(model.pureWriteToFile(fileContent, pureFilePath));
         view.writeOutput("CONTENT: " +model.readFromFile(filePath));
 
     }
