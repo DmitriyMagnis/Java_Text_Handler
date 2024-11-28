@@ -19,6 +19,6 @@ public class AppView {
         scanner.close();
     }
     public void writeOutput(String item) {
-        System.out.print(item + " ");
+        System.out.print(item + "\n");
     }
 }

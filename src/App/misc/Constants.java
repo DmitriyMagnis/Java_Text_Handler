@@ -1,5 +1,5 @@
 package App.misc;
 
-public class Constants {
-    private static final String BASE_PATH = "files/";
+public final class Constants {
+    public final static String BASE_PATH = "files/";
 }
